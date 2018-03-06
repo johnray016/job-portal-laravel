@@ -31,9 +31,6 @@ class FreelancerController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request) {
-        if(Auth()->user()->role !== 1) {
-            return redirect('/')->with('error', 'Unauthorize Page');
-        } 
         $categories = JobCategory::all();
         $cat = $request->input('cat');
         $search = $request->input('search');

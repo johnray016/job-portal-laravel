@@ -87,8 +87,6 @@ class JobController extends Controller
         $user_id = Auth()->user()->id;
         $job = Job::find($id); 
         $jobcount = Job::where('user_id', $job->user_id)->count();
-        $activejobs = Job::where('user_id', $job->user_id)
-                    ->count();
         $exist = DB::table('applicants')
             ->join('jobs', 'applicants.job_id', '=', 'jobs.id')
             ->when($id, function ($query) use ($id) {

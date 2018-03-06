@@ -1,0 +1,254 @@
+/* Resets */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--secondary-font: 'Spinnaker', sans-serif; /* nav */
+	--secondary-color: #17a2b8; /* Blue */
+}
+/* General */
+body {
+	font-size: 0.8em;
+}
+main {
+	min-height: 500px;
+}
+/*
+*
+* Notification
+*
+*/
+
+.loading {
+    background: rgba(23, 162, 184, 0.7);
+    padding: 15px;
+    position: fixed;
+    border-radius: 4px;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    margin: -40px 0 0 -50px;
+    z-index: 2000;
+    display: none;
+    color: #fff;
+}
+/*
+*
+* Navigation
+*
+*/
+
+nav {
+	font-family: var(--secondary-font);
+	font-weight: bold;
+}
+nav .list-group-item {
+	border: none;
+}
+a.nav-link:hover {
+	color: #17a2b8 !important;
+}
+img#mylogo {
+	height: 30px !important;	
+}
+/*
+*
+* Jumbotron
+*
+*/
+
+.jumbotron {
+	background-image: url(/storage/assets/jumbotron.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 80vh;
+	text-align: center;
+}
+.jumbotron-content {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 80vh;
+}
+h1 {
+	border-bottom: 3px solid #fff;
+	color: #fff !important;
+	text-shadow: 3px 3px 10px #000;
+}
+.jumbotron-content div div {
+	margin: 0 auto;
+}
+section#vectorimages div.row > div.col-sm:first-child {
+	padding: 30px;
+}
+
+/*
+*
+* Browse Categories
+*
+*/
+section#BrowseCategories a:hover {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+/*
+*
+* Vector images
+*
+*/
+
+section#vectorimages {
+	background-color: #18b5c6;	
+}
+
+/*
+*
+* footer
+*
+*/
+footer {
+	background-color: #7d7d7d;
+}
+footer li {
+	list-style: none;
+}
+footer a {
+	color: #e0e0e0;
+}
+footer a:hover {
+	text-decoration: none;
+	color: #e0e0e0;
+}
+
+div.footer {
+	color: #e0e0e0;
+}
+div.footer div {
+	text-align: center;
+}
+
+/*
+*
+* dashboard
+*
+*/
+.profilepicture,
+.fa-trash-alt:hover,
+.fa-edit:hover,
+.fa-pencil-alt:hover,
+.fa-trash:hover {
+	cursor: pointer;
+}
+
+/*
+*
+* Userdashboard
+*
+*/
+.small span {
+	font-size: 12px!important;
+}
+/*
+*
+* profile.blade.php
+*
+*/
+.select2-container,
+.select2-search__field {
+	width: 100% !important;
+}
+
+div#accordion .card-header:hover {
+	cursor: pointer;
+}
+.fa-user-circle {
+	cursor: pointer;
+}
+
+.profilepicture {
+	width: 128px !important;
+	height: 128px !important;
+}
+
+/*
+*
+* application.blade.php
+*
+*
+*/
+article {
+	overflow: hidden
+}
+.job-pecification {
+	border-left: 1px solid #ccc;
+}
+
+/*
+*
+* shortlist.blade.php
+*
+*/
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: #fff;
+	background-color: var(--secondary-color);
+	border-color:  var(--secondary-color);
+}
+
+.nav-link.active:hover {
+	color: #fff!important;
+}
+.fa-thumbs-up,
+.fa-thumbs-up:hover {
+	color: green;
+	cursor: pointer;
+}
+.fa-thumbs-down,
+.fa-thumbs-down:hover {
+	color: red;
+	cursor: pointer;
+}
+
+.collapse-accordion .card a[data-toggle=collapse] {display: block;padding:.75rem 1.25rem;}
+.collapse-accordion .card-header {padding:0;}
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) and (max-width: 575px) {
+	#updateJobButton,
+	#updateJobButton + span,
+	#updateJobButton + span button {
+		display: block!important;
+		width: 100%!important;
+		margin-bottom: 5px!important;
+	}
+}
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+	body {
+		font-size: 0.7em;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px)  {
+	section#vectorimages div.row > div.col-sm:first-child {
+		padding: 4em 4em 0 4em !important;
+	}
+	section#vectorimages {
+		display: grid;
+		grid-template-columns: 1fr 1fr;	
+		padding-left: 5em;
+		padding-right: 5em;
+	}	
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	body p {
+		font-size: 1.2em;
+	}
+}

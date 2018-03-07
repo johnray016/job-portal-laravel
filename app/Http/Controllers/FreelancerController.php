@@ -90,11 +90,13 @@ class FreelancerController extends Controller
         if(Auth()->user()->role !== 1) {
             return redirect('/')->with('error', 'Unauthorize Page');
         } 
+
         $profile = new Profile;
         $profile->job_title = $request->title;
         $profile->city = $request->city;
         $profile->province = $request->province;
         $profile->country = $request->country;
+        $profile->user_id = Auth()->user()->id;
         $profile->overview = $request->overview;        
         $profile->save();
     }

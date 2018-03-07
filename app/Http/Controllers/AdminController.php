@@ -68,7 +68,7 @@ class AdminController extends Controller
 
     public function addSkills(Request $request) {
         $skill = new Skill;
-        $skill->skill = $request->input('add_skill');
+        $skill->skill = $request->input('add_skills');
         $skill->save();
         return view('admin.skills');
     }   

@@ -1,5 +1,4 @@
 /node_modules
-/storage/*.key
 /vendor
 /.idea
 /.vscode

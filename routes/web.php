@@ -99,5 +99,7 @@ Route::get('/panel/jobs', 'AdminController@showJobs');
 
 Route::get('/panel/jobs/delete/{id}', 'AdminController@deleteJob');
 
+Route::get('/panel/categories', 'AdminController@showCategories');
 
+Route::post('/panel/categories/add', 'AdminController@addCategories');
 

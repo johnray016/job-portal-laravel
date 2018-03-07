@@ -17,12 +17,9 @@ class CreateProfilesTable extends Migration
             $table->increments('id');
             $table->string('job_title');
             $table->text('overview');
-            $table->string('language');
-            $table->string('address');
             $table->string('city');
             $table->string('province');
             $table->string('country');
-            $table->string('phone');
             $table->integer('user_id');
             $table->timestamps();
         });

@@ -21,7 +21,6 @@ class AddColumnsToJobsTable extends Migration
             $table->string('position_type');    
             $table->string('project_duration');
             $table->integer('user_id');
-            $table->string('status');
          });   
     }
 
@@ -40,7 +39,6 @@ class AddColumnsToJobsTable extends Migration
             $table->dropColumn('position_type');    
             $table->dropColumn('project_duration');
             $table->dropColumn('user_id');
-            $table->dropColumn('status');
          });   
     }
 }

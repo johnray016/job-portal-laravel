@@ -68,7 +68,7 @@ class AdminController extends Controller
 
     public function addCategories(Request $request) {
         $category = new JobCategory;
-        $category->category_name = $request->category;
+        $category->category_name = $request->input('add_category');
         $category->save();
 
     }   

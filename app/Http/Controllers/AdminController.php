@@ -62,14 +62,4 @@ class AdminController extends Controller
        $job->delete();
     }
 
-    public function showCategories() {
-        return view('admin.categories');
-    }
-
-    public function addCategories(Request $request) {
-        $categories = new JobCategory;
-        $categories->category_name = $request->input('add_categories');
-        $categories->save();
-        return view('admin.categories');
-    }   
 }

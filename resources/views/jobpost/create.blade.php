@@ -60,7 +60,6 @@
 						    </select>
 						  </div>
 					  </div>
-					  <input type="hidden" name="status" value="active">
 					  <button type="submit" class="btn btn-info">Submit</button>
                   </form>
                 </div>

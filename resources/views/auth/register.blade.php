@@ -69,7 +69,6 @@
                                     <option selected disabled>...Select Role</option>
                                     <option value='1'>Freelancer</option>
                                     <option value="2">Client</option>
-                                    <option value="3">Admin</option>
                                 </select>
                             </div>
                         </div>

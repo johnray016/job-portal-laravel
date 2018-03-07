@@ -63,7 +63,7 @@ class AdminController extends Controller
     }
 
     public function showCategories() {
-        return view('admin.skills');
+        return view('admin.categories');
     }
 
     public function addCategories(Request $request) {

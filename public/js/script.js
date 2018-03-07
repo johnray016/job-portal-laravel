@@ -247,7 +247,7 @@ $(document).ready(function(){
 	    $('.loading').show();   
 	   		 $.ajax({ 
 		        type: 'post',
-		        url: '/profile/add',
+		        url: '/profile/update',
 		        headers: {
 		          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 		        },

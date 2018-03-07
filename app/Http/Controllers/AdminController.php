@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Job;
-use App\Category;
+use App\JobCategory;
 
 class AdminController extends Controller
 {

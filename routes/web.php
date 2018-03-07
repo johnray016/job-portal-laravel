@@ -30,7 +30,7 @@ Route::get('/userdashboard', 'FreelancerController@index');
 
 Route::post('/profile/store', 'FreelancerController@storeProfile');
 
-Route::post('/profile/update', 'FreelancerController@updateProfile');
+Route::post('/profile/edit', 'FreelancerController@updateProfile');
 
 Route::post('/profile/uploadphoto', 'FreelancerController@uploadPhoto');
 

@@ -23,7 +23,7 @@ Skills
                   <div class="tab-content text-muted p-3">
                       <div class="tab-pane active" id="admin-tabs-1" role="tabpanel">
                           <div class="row">
-                            <form action="/panel/skills/add" method="post">
+                            <form action="/panel/categories/add" method="post">
                               {{csrf_field()}}
                                 <div class="col-xs-8 mt-2">
                                   <div class="form-group">

@@ -45,12 +45,12 @@ class ClientController extends Controller
             ->join('profiles', 'applicants.user_id', '=', 'profiles.user_id')
             ->join('jobs', 'applicants.job_id', '=', 'jobs.id')
             ->join('users', 'applicants.user_id', '=', 'users.id')
-            ->when($id, function ($query) use ($id) {
-                    return $query->where('applicants.job_id', $id);
-                }) 
+            // ->when($id, function ($query) use ($id) {
+            //         return $query->where('applicants.job_id', $id);
+            //     }) 
             ->orderBy('applicants.created_at', 'desc')
             ->get();
-        dd($id);  
+        dd($applicants);  
         return view('client.shortlist', compact('job', 'applicants'));
     }   
 

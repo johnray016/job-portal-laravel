@@ -48,7 +48,7 @@
                         <a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="/panel/jobs">JOBS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="/panel/categories">JOBS</a>
+                        <a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="/panel/categories">CATEGORIES</a>
                     </li>
                   </ul>  
                     <!-- Right Side Of Navbar -->

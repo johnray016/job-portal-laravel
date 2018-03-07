@@ -68,7 +68,7 @@ class AdminController extends Controller
 
     public function addCategories(Request $request) {
         $categories = new Skill;
-        $categories->category_name = $request->input('add_categories');
+        $categories->skill = $request->input('add_categories');
         $categories->save();
         return view('admin.categories');
     }   

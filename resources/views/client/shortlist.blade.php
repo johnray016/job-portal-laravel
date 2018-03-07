@@ -83,13 +83,10 @@
                                            <td class="text-center" ><i class="fas fa-user-circle fa-6x text-muted"></i></td>
                                         @endif 
                                       <td class="text-nowrap"><h5 class="h5"> <a class="text-info" href="/proposal/{{$applicant->job_id}}/{{$applicant->id}}">{{ $applicant->name }}</a></h5>
-                                        <p>{{ $applicant->job_title }}</p>
                                         <p class="small"> 
                                             <span class="mr-5">
                                                 <i class="fas fa-envelope"></i> Received: {{ $job->created_at->diffForHumans() }}
-                                            </span>                                            
-                                            <span><i class="fas fa-map-marker-alt"></i> {{ $applicant->country }}
-                                            </span>
+                                            </span>  
                                         </p>
                                       </td>
                                      @if ($applicant->status == 'hired')

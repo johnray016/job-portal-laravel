@@ -104,7 +104,7 @@ return [
     |
     */
 
-    'key' => 'base64:LXdu5JPZ7+4mxqhiTr8CFy8pfGbejvP4iX2CxXcEcvc=',
+    'key' => 'base64:UBvtJvp6G2TGoL0tMrLlxNrSiXrfBa/tvg/R6xw2cAI=',
 
     'cipher' => 'AES-256-CBC',
 

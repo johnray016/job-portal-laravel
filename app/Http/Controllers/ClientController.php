@@ -50,6 +50,7 @@ class ClientController extends Controller
                  })  
             ->orderBy('applicants.created_at', 'desc')
             ->get();
+        dd($applicants);  
         return view('client.shortlist', compact('job', 'applicants'));
     }   
 

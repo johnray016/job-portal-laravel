@@ -103,3 +103,7 @@ Route::get('/panel/categories', 'AdminController@showCategories');
 
 Route::post('/panel/categories/add', 'AdminController@addCategories');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

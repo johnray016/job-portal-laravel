@@ -60,16 +60,5 @@ class AdminController extends Controller
     {
        $job = Job::findOrFail($id);    
        $job->delete();
-    }
-
-    public function showSkills() {
-        return view('admin.skills');
-    }
-
-    public function addSkills(Request $request) {
-        $skill = new Skill;
-        $skill->skill = $request->input('add_skill');
-        $skill->save();
-        return view('admin.skills');
-    }   
+    } 
 }

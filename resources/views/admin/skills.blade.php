@@ -23,6 +23,8 @@ Skills
                   <div class="tab-content text-muted p-3">
                       <div class="tab-pane active" id="admin-tabs-1" role="tabpanel">
                           <div class="row">
+                            <form action="/panel/skills/add" method="post">
+                              {{csrf_field()}}
                                 <div class="col-xs-8 mt-2">
                                   <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Add Skills" name="add_skills">
@@ -31,6 +33,7 @@ Skills
                                 <div class="col-xs-4 mt-2">
                                   <button type="submit" class="btn btn-primary w-100">ADD</button>
                                 </div>
+                            </form>
                           </div>
                       </div>
                   </div>

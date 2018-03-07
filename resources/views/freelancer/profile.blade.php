@@ -53,15 +53,7 @@
 
                 </div>
                 <div class="col-md-10 pl-5">
-                    <h3 class="h3 text-info d-inline-block">{{$user->name}}</h3>
-            @if ($profile !== null)
-              <button class="btn btn-default float-right" data-toggle="modal" data-target="#editprofile{{$user->id}}">
-            @else
-              <button class="btn btn-default float-right" data-toggle="modal" data-target="#addprofile{{$user->id}}">
-            @endif  
-                    <button class="btn btn-default float-right" data-toggle="modal" data-target="#">
-
-                      <i class="far fa-edit text-success"></i> <span class="text-success h6">Edit</span></button>
+                    <h3 class="h3 text-info d-inline-block">{{$user->name}}</h3><button class="btn btn-default float-right" data-toggle="modal" data-target="#editprofile{{$user->id}}"><i class="far fa-edit text-success"></i> <span class="text-success h6">Edit</span></button>
                     <h5 class="h5">
                        @if ($profile !== null)
                          {{$profile->job_title}}
@@ -76,12 +68,7 @@
             </div>
 
             {{-- Edit Profile --}}
-            @if ($profile !== null)
-              <div class="modal fade" id="editprofile{{$user->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            @else
-              <div class="modal fade" id="addprofile{{$user->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            @endif 
-            <div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="editprofile{{$user->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -122,12 +109,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    @if ($profile !== null)
-                     <button type="submit" class="btn btn-primary editProfileButton" data-dismiss="modal" data-id="{{$user->id}}">Save changes</button>
-                    @else
-                      <button type="submit" class="btn btn-primary addProfileButton" data-dismiss="modal" data-id="{{$user->id}}">Save changes</button>
-                    @endif 
-                    
+                    <button type="submit" class="btn btn-primary editProfileButton" data-dismiss="modal" data-id="{{$user->id}}">Save changes</button>
                   </div>
                 </div>
               </div>

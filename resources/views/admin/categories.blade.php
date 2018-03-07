@@ -24,6 +24,7 @@ Manage Jobs
                       <div class="tab-pane active" id="admin-tabs-1" role="tabpanel">
                           <div class="row">
                             <form action="/panel/categories/add" method="post">
+                              {{ csrf_field() }}
                                 <div class="col-xs-8 mt-2">
                                   <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Add Category" name="add_category">

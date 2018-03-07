@@ -20,8 +20,7 @@
                             <tr>
                               <th>Job</th>
                               <th>Date Posted</th>
-                              <th>Posted By</th>
-                              <th>Hires</th>                          
+                              <th>Posted By</th>                  
                               <th></th>
                               <th></th>
                             </tr>
@@ -32,7 +31,6 @@
                             <th scope="row"><h5 class="h5"><a href="jobs/{{$job->id}}" class="text-success">{{$job->title}}</a></h5 ></th>
                             <td><small>{{$job->created_at->diffForHumans()}}</small></td>
                             <td>{{$job->user->name}}</td>
-                            <td>1 Hire</td>
                             <td>
                               <i class="far fa-edit text-info" id="editJob" data-id="{{$job->id}}"></i>
                             </td>

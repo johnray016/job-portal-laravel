@@ -69,6 +69,7 @@ class ClientController extends Controller
                     return $query->where('applicants.user_id', $user_id);
                 })
             ->first();
+            
         return view('client.proposal', compact('job', 'applicant'));
     }   
 

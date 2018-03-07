@@ -27,11 +27,11 @@ Manage Jobs
                               {{ csrf_field() }}
                                 <div class="col-xs-8 mt-2">
                                   <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Add Category" name="add_category">
+                                    <input type="text" class="form-control" placeholder="Add Category" name="add_category" id="addNewCategory">
                                   </div>
                                 </div>
                                 <div class="col-xs-4 mt-2">
-                                  <button type="submit" class="btn btn-primary w-100">Add</button>
+                                  <button type="submit" class="btn btn-primary w-100" id="addCategory">Add</button>
                                 </div>
                             </form>    
                           </div>

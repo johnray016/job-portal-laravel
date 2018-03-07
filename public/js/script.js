@@ -320,4 +320,26 @@ $(document).ready(function(){
             });
         });
 
+
+    	 //Unban Clients
+    $('#addCategory').click(function(){ 
+    	var category = $('#addNewCategory').val();
+    	$('.loading').show();
+    		$.ajax({ 
+	        type: 'post',
+	        url: '/panel/categories/add',
+	        headers: {
+	          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	        },
+	        data: {
+	       	  category: category
+	        },success: function(data) {  
+	            location.reload();
+	            toastr.success(' ', 'Category Added', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
+	        }
+	    });
+    });	
+
+
 });//document.ready

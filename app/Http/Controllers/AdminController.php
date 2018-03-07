@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Job;
-use App\JobCategory;
+use App\Skill;
 
 class AdminController extends Controller
 {
@@ -67,7 +67,7 @@ class AdminController extends Controller
     }
 
     public function addCategories(Request $request) {
-        $categories = new JobCategory;
+        $categories = new Skill;
         $categories->category_name = $request->input('add_categories');
         $categories->save();
         return view('admin.categories');

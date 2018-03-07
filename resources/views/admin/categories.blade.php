@@ -27,7 +27,7 @@ Skills
                               {{csrf_field()}}
                                 <div class="col-xs-8 mt-2">
                                   <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Add Skills" name="add_skills">
+                                    <input type="text" class="form-control" placeholder="Add Skills" name="add_categories">
                                   </div>
                                 </div>
                                 <div class="col-xs-4 mt-2">

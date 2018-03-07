@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Job;
-use App\Skill;
+use App\JobCategory;
 
 class AdminController extends Controller
 {
@@ -62,14 +62,14 @@ class AdminController extends Controller
        $job->delete();
     }
 
-    public function showSkills() {
+    public function showCategories() {
         return view('admin.skills');
     }
 
-    public function addSkills(Request $request) {
-        $skill = new Skill;
-        $skill->skill = $request->input('add_skills');
-        $skill->save();
-        return view('admin.skills');
+    public function addCategories(Request $request) {
+        $categories = new JobCategory;
+        $categories->category_name = $request->input('add_categories');
+        $categories->save();
+        return view('admin.categories');
     }   
 }

@@ -47,6 +47,9 @@
                     <li class="nav-item">
                         <a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="/panel/jobs">JOBS</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link list-group-item list-group-item-action flex-column align-items-end" href="/panel/categories">JOBS</a>
+                    </li>
                   </ul>  
                     <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto list-group">

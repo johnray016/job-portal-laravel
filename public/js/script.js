@@ -21,8 +21,8 @@ $(document).ready(function(){
                 },
                 success: function(data) {
                    jobPosting.fadeOut(350);
-                   $('.loading').hide();
                    toastr.success(' ', 'Job Posting Deleted', {timeOut: 3000, positionClass: 'toast-top-center'});
+                   $('.loading').hide();
                 }
             });
         });
@@ -72,8 +72,8 @@ $(document).ready(function(){
 	        	year.val("");
 	        	achievement.val("");
 	            $('#educationBackgroundBody').load(' #educationBackgroundBody > div');
-	            $('.loading').hide();
 	            toastr.success(' ', 'Education Background Added', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
 	        }
 	    });
 	});
@@ -100,8 +100,8 @@ $(document).ready(function(){
 	          achievement:achievement
 	        },success: function(data) {    
 	            $('#educationBackgroundBody').load(' #educationBackgroundBody > div');
-	            $('.loading').hide();
 	            toastr.success(' ', 'Education Background Updated', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
 	        }
 	    });
    });
@@ -122,8 +122,8 @@ $(document).ready(function(){
 	       	  id: id
 	        },success: function(data) {  
 	            $('#educationBackgroundBody').load(' #educationBackgroundBody > div');
-	            $('.loading').hide();
 	            toastr.success(' ', 'Deleted', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
 	        }
 	    });
   }); 	
@@ -152,8 +152,8 @@ $(document).ready(function(){
 	        	year.val("");
 	        	description.val("");
 	            $('.workBackgroundBody').load(' .workBackgroundBody > div');
-	            $('.loading').hide();
 	            toastr.success(' ', 'New Work Added', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
 	        }
 	    });
 	});
@@ -181,8 +181,8 @@ $(document).ready(function(){
 	          description:description
 	        },success: function(data) {    
 	            $('.workBackgroundBody').load(' .workBackgroundBody > div');
-	            $('.loading').hide();
 	            toastr.success(' ', 'Education Background Updated', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
 	        }
 	    });
    });
@@ -200,8 +200,8 @@ $(document).ready(function(){
 			       	  id: id
 			        },success: function(data) {  
 			            $('.workBackgroundBody').load(' .workBackgroundBody > div');
-			            $('.loading').hide();
 			            toastr.success(' ', 'Deleted', {timeOut: 3000, positionClass: 'toast-top-center'});
+			            $('.loading').hide();
 			        }
 			    });
   }); 	
@@ -232,8 +232,8 @@ $(document).ready(function(){
 		          overview:overview
 		        },success: function(data) {    
 			    location.reload();
-	            $('.loading').hide();
 	            toastr.success(' ', 'Profile Successfully Updated', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
 	        }
 	    });
    });
@@ -252,8 +252,8 @@ $(document).ready(function(){
 	       	  id: id
 	        },success: function(data) {  
 	            location.reload();
-	            $('.loading').hide();
 	            toastr.success(' ', 'Banned', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
 	        }
 	    });
     });	
@@ -272,8 +272,8 @@ $(document).ready(function(){
 	       	  id: id
 	        },success: function(data) {  
 	            location.reload();
-	            $('.loading').hide();
 	            toastr.success(' ', 'User Unbanned', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
 	        }
 	    });
     });	
@@ -292,8 +292,8 @@ $(document).ready(function(){
 	       	  id: id
 	        },success: function(data) {  
 	            location.reload();
-	            $('.loading').hide();
 	            toastr.success(' ', 'Client Unbanned', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
 	        }
 	    });
     });	
@@ -314,8 +314,8 @@ $(document).ready(function(){
                 },
                 success: function(data) {
                    location.reload();
-                   $('.loading').hide();
                    toastr.success(' ', 'Job Posting Deleted', {timeOut: 3000, positionClass: 'toast-top-center'});
+                   $('.loading').hide();
                 }
             });
         });

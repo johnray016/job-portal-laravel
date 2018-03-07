@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Job;
+use App\Category;
 
 class AdminController extends Controller
 {
@@ -60,4 +61,16 @@ class AdminController extends Controller
        $job = Job::findOrFail($id);    
        $job->delete();
     }
+
+    public function showCategories() {
+        return view('admin.categories');
+    }
+
+    public function addCategories(Request $request) {
+        $new_category = new Category;
+        $new_category->category_name = $request->input('add_category');
+        $new_category->save();
+
+        return view('admin.categories');
+    }   
 }

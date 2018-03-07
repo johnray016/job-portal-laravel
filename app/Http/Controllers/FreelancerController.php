@@ -83,10 +83,20 @@ class FreelancerController extends Controller
         $works = Work::where('user_id', $user->id)
                     ->orderBy('created_at', 'desc')
                     ->get(); 
-        if ($profile == null) {
-            $te = 'fakje';
-        }                
         return view('freelancer.profile', compact('user', 'profile', 'skills', 'educations', 'works'));
+    }
+
+    public function storeProfile(Request $request) {
+        if(Auth()->user()->role !== 1) {
+            return redirect('/')->with('error', 'Unauthorize Page');
+        } 
+        $profile = new Profile;
+        $profile->job_title = $request->title;
+        $profile->city = $request->city;
+        $profile->province = $request->province;
+        $profile->country = $request->country;
+        $profile->overview = $request->overview;        
+        $profile->save();
     }
 
     public function updateProfile(Request $request) {

@@ -206,6 +206,34 @@ $(document).ready(function(){
 			    });
   }); 	
 
+   // Add Profile information
+   $(document).on('click', '.addProfileButton', function(){ 
+	   	var title = $(this).parent().siblings().find('#editJobTitle').val();
+	   	var city = $(this).parent().siblings().find('#editCity').val();
+	   	var province = $(this).parent().siblings().find('#editProvince').val();
+	   	var country = $(this).parent().siblings().find('#editCountry').val();
+	   	var overview = $(this).parent().siblings().find('#editOverview').val();
+	    $('.loading').show();   
+	   		 $.ajax({ 
+		        type: 'post',
+		        url: '/profile/store',
+		        headers: {
+		          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+		        },
+		        data: {
+		          title:title,
+		          city:city,
+		          province:province,
+		          country:country,
+		          overview:overview
+		        },success: function(data) {    
+			    location.reload();
+	            toastr.success(' ', 'Profile Successfully Updated', {timeOut: 3000, positionClass: 'toast-top-center'});
+	            $('.loading').hide();
+	        }
+	    });
+   });
+
 
 
    // Edit Profile information
@@ -219,7 +247,7 @@ $(document).ready(function(){
 	    $('.loading').show();   
 	   		 $.ajax({ 
 		        type: 'post',
-		        url: '/profile/update',
+		        url: '/profile/add',
 		        headers: {
 		          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 		        },

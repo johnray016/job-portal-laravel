@@ -28,7 +28,7 @@ Route::resource('/jobs', 'JobController');
 
 Route::get('/userdashboard', 'FreelancerController@index');
 
-Route::post('/profile/store', 'FreelancerController@updateProfile');
+Route::post('/profile/store', 'FreelancerController@storeProfile');
 
 Route::post('/profile/update', 'FreelancerController@updateProfile');
 

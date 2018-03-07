@@ -42,7 +42,7 @@ class ClientController extends Controller
         } 
         $job = Job::findOrFail($id);
         $applicants = DB::table('applicants')
-            // ->join('profiles', 'applicants.user_id', '=', 'profiles.user_id')
+            ->join('profiles', 'applicants.user_id', '=', 'profiles.user_id')
             ->join('jobs', 'applicants.job_id', '=', 'jobs.id')
             ->join('users', 'applicants.user_id', '=', 'users.id')
             ->where(function ($query) use ($id) {

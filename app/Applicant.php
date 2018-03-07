@@ -19,6 +19,6 @@ class Applicant extends Model
    }
 
    function profile() {
-    	return $this->hasOne('App\Profile', 'profile');
+    	return $this->hasOne('App\Profile');
    }
 }

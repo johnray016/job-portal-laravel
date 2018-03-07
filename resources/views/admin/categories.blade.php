@@ -27,7 +27,7 @@ Manage Jobs
                               {{ csrf_field() }}
                                 <div class="col-xs-8 mt-2">
                                   <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Add Category" name="add_category">
+                                    <input type="text" class="form-control" placeholder="Add Category" name="add_skill">
                                   </div>
                                 </div>
                                 <div class="col-xs-4 mt-2">

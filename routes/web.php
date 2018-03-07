@@ -99,7 +99,7 @@ Route::get('/panel/jobs', 'AdminController@showJobs');
 
 Route::get('/panel/jobs/delete/{id}', 'AdminController@deleteJob');
 
-Route::get('/panel/categories', 'AdminController@showCategories');
+Route::get('/panel/skills', 'AdminController@showSkills');
 
-Route::post('/panel/categories/add', 'AdminController@addCategories');
+Route::post('/panel/skills/add', 'AdminController@addSkills');
 
